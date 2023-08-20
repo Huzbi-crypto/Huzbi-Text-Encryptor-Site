@@ -1,0 +1,23 @@
+.cursor {
+  position: fixed;
+  z-index: 999;
+  background: #4ce3de;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #4ce3de, 0 0 60px #4ce3de, 0 0 100px #4ce3de;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.cursor:before {
+  content: "";
+  position: absolute;
+  background: #4ce3de;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
